@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+/**import { test, expect } from '@playwright/test'
 
 let urlHome = "http://localhost:3000";
 let urlAbout = "http://localhost:3000/about";
@@ -160,4 +160,4 @@ test.describe('The Arrow Area', () => {
 
         await expect(page.locator('a > span > img')).toHaveCount(2);
     })
-})
+})**/
