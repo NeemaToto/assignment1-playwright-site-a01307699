@@ -278,6 +278,14 @@
   }
 }
 
+.homeBody{
+  background-image: url(/background-images/backgroundMountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
 /*About Page*/
 .carouselImage{
   height:200px;

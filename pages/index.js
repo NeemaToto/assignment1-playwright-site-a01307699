@@ -17,12 +17,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-    
+      <div className={styles.homeBody}>
         <main className={styles.main}>
-
           <h1>An investment in knowledge pays the best interest.</h1>
-
-
           <p>Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.</p>
 
           <a>
@@ -32,7 +29,7 @@ export default function Home() {
 
           <a><span><img src='/icons/downwardArrow.png' /></span></a>
         </main>
-    
+      </div>
     </>
   )
 }
