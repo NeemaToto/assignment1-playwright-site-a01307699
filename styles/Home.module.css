@@ -282,9 +282,24 @@
   background-image: url(/background-images/backgroundMountain.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  margin-left: 2rem;
+}
+
+.navBar > button{
+  background: none;
+  border: none;
+}
+
+.navBar > button > img{
+  width: 60px;
+  height: auto;
+}
 
 /*About Page*/
 .carouselImage{
