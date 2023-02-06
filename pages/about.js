@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import NavBar from '@/components/navBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,42 +18,48 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <main className={styles.main}>
-                <div>
-                    <h1></h1>
-                    <h1></h1>
+            <div className={styles.aboutWrapper}>
+                <NavBar image='/icons/menu-icon.png' />
+                <main className={styles.main}>
+                    <div className={styles.aboutBodyContainer}>
+                        <div className={styles.aboutTextContainer}>
+                            <div className={styles.aboutHeaderContainer}>
+                                <hr></hr><h1>About Us</h1><hr></hr>
+                                <h1></h1>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
 
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                            <h2></h2>
+                            <h2></h2>
 
-                    <h2></h2>
-                    <h2></h2>
+                            <h3></h3>
+                        </div>
 
-                    <h3></h3>
-                </div>
-
-                <div className={styles.carouselImage} id='carouselImage'>
-                    <div className={styles.testOnImageHere} id='testOnImageHere'>
-                        <ul>
-                            <li>Applied & Natural Sciences</li>
-                            <li>Business & Media</li>
-                            <li>Computing & IT</li>
-                            <li>Engineerin</li>
-                            <li>Health Sciences</li>
-                            <li>Trades & Apprenticeships</li>
-                        </ul>
+                        <div className={styles.carouselImage} id='carouselImage'>
+                            <div className={styles.testOnImageHere} id='testOnImageHere'>
+                                <ul>
+                                    <li>Applied & Natural Sciences</li>
+                                    <li>Business & Media</li>
+                                    <li>Computing & IT</li>
+                                    <li>Engineerin</li>
+                                    <li>Health Sciences</li>
+                                    <li>Trades & Apprenticeships</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <a><span><img src='/icons/upwardArrow.png'></img></span></a>
+                            <a><span><img src='/icons/downwardArrow.png'></img></span></a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <a><span><img src='/icons/upwardArrow.png'></img></span></a>
-                    <a><span><img src='/icons/downwardArrow.png'></img></span></a>
-                </div>
-            </main>
+                </main>
+            </div>
         </>
     )
 }

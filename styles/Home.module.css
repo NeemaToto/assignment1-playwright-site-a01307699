@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .description {
@@ -277,18 +281,20 @@
     transform: rotate(0deg);
   }
 }
-
-.homeBody{
+/*Home Page*/
+.homeWrapper{
   background-image: url(/background-images/backgroundMountain.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  color: var(--primary-color);
 }
 
 .navBar{
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem;
-  margin-left: 2rem;
+  padding:2.5rem;
+  width: 100vw;
 }
 
 .navBar > button{
@@ -301,7 +307,108 @@
   height: auto;
 }
 
+.homeBodyContainer{
+display: flex;
+flex-direction: row;
+height: 60vh;
+width: 80vw;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.homeContent{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  gap: 1.4rem;
+  justify-content: flex-end;
+  margin-left: 12rem;
+}
+
+.homeContent > p{
+  font-size: 1.1rem;
+}
+
+.homeContent > hr{
+ height: 4px;
+ background-color: var(--secondary-color);
+ border-style:none;
+ width: 18vw;
+ 
+}
+
+.homeButtons{
+  display: flex;
+}
+
+.homeButton{
+  background: none;
+  padding: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 7px;
+  border-color: var(--primary-color);
+  border-style: solid;
+  color: var(--primary-color);
+  margin-right: 0.7rem;
+}
+
+.homeButton:hover{
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  border-color: var(--primary-color);
+  border-style: solid;
+  color: var(--quaternary-color);
+}
+
+.downArrowContainer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 20vw;
+  padding-top: 30rem;
+}
+
+.downArrowImg{
+  width: 3rem;
+  
+}
+
 /*About Page*/
+.aboutWrapper{
+  background-color: var(--quaternary-color);
+}
+
+.aboutBodyContainer{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+
+.aboutTextContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+width: 100%;
+}
+
+.aboutHeaderContainer{
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+.aboutHeaderContainer > hr{
+  height: 4px;
+  background-color: var(--secondary-color);
+  border-style:none;
+  width: 18vw;
+}
+
+
 .carouselImage{
   height:200px;
   background-repeat: no-repeat;
@@ -311,6 +418,8 @@
   align-items: center;
   margin: 40px 0px;
 }
+
+
 
 /*contact page*/
 .testOnImageHere{
